@@ -2,7 +2,7 @@ import {Component, OnInit} from "@angular/core";
 import {FormControl} from "@angular/forms";
 
 @Component({
-  selector: "arby-dashboard",
+  selector: "triio-dashboard",
   templateUrl: "./dashboard.component.html",
   styleUrls: ["./dashboard.component.scss"]
 })

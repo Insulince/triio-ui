@@ -5,7 +5,7 @@ import {ValidationService} from "../../services/validation/validation.service";
 import {ApiService} from "../../services/api/api.service";
 
 @Component({
-  selector: "arby-login",
+  selector: "triio-login",
   templateUrl: "./login.component.html",
   styleUrls: ["./login.component.scss"]
 })

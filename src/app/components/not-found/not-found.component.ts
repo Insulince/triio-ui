@@ -1,7 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 
 @Component({
-  selector: "arby-not-found",
+  selector: "triio-not-found",
   templateUrl: "./not-found.component.html",
   styleUrls: ["./not-found.component.scss"]
 })

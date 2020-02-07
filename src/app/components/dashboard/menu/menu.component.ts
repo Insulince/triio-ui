@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'arby-menu',
+  selector: 'triio-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss']
 })

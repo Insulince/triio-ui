@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'arby-exchanges',
+  selector: 'triio-exchanges',
   templateUrl: './exchanges.component.html',
   styleUrls: ['./exchanges.component.scss']
 })

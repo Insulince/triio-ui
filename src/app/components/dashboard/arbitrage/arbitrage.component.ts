@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'arby-arbitrage',
+  selector: 'triio-arbitrage',
   templateUrl: './arbitrage.component.html',
   styleUrls: ['./arbitrage.component.scss'],
   encapsulation: ViewEncapsulation.None
