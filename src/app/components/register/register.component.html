@@ -14,13 +14,13 @@
           <div class="row body-row">
             <label class="col-sm-2 col-form-label my-auto body-label register-username">Username</label>
             <div class="col-sm-10">
-              <input class="form-control body-form" formControlName="username" type="text" placeholder="Username">
+              <input class="form-control body-form username-input" formControlName="username" type="text" placeholder="Username">
             </div>
           </div>
           <div class="row body-row">
             <label class="col-sm-2 col-form-label my-auto body-label register-email">Email</label>
             <div class="col-sm-10">
-              <input class="form-control body-form" formControlName="email" type="email" placeholder="you@example.com">
+              <input class="form-control body-form email-input" formControlName="email" type="email" placeholder="you@example.com">
             </div>
           </div>
           <div class="row body-row">
@@ -72,7 +72,7 @@
         <div class="row footer-row">
           <div class="col-md-12">
             <form [formGroup]="registerForm" (submit)="userRegister()">
-              <button class="btn register-btn create-btn" [disabled]="registerForm.pristine || registerForm.invalid">Create an account</button>
+              <button class="btn register-btn register-button create-btn" [disabled]="registerForm.pristine || registerForm.invalid">Create an account</button>
             </form>
           </div>
         </div>
