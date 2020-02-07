@@ -1,0 +1,52 @@
+@import "../../../../variables";
+p {
+  margin: 0;
+}
+.header-row {
+  display: inline-block;
+  padding: 20px;
+}
+.header-1 {
+  margin: 20px;
+}
+.item {
+  color: white;
+  padding: 20px;
+}
+.item:hover {
+  cursor: pointer;
+}
+
+.container-fluid {
+  width: 100%;
+  height: 100%;
+}
+
+.views-row {
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.views {
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.trades {
+  background-color: mediumpurple;
+}
+.profits {
+  background-color: lightgreen;
+}
+.portfolio {
+  background-color: coral;
+}
+.graph {
+  background-color: $color-5;
+  height: 400px;
+}
+.bots {
+  background-color: $color-5;
+  height: 400px;
+}

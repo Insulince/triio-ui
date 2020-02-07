@@ -1,0 +1,116 @@
+@import "../../../variables";
+.example-container {
+  background-color: $color-4;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.toggler {
+  margin: 20px;
+  width: 30%;
+  display: inline-block;
+}
+
+.container-fluid {
+  height: 100%;
+  width: 100%;
+}
+
+.mat-icon {
+  vertical-align: -5px;
+  padding-right: 25px;
+}
+
+.dashboard-container {
+  width: 100%;
+  height: 100%;
+  background-color: $color-4;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.dashboard-sidenav-desktop {
+  background-color: #051923;
+  padding: 20px;
+}
+
+.dashboard-nav-mobile {
+  background-color: $color-5;
+}
+
+.title {
+  font-size: 24px;
+  color: white;
+}
+
+.title:hover {
+  cursor: pointer;
+}
+
+.title:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.title-item {
+  color: white;
+  font-size: 20px;
+  padding: 20px 20px 20px 20px;
+}
+
+.title-item-nav {
+  color: white;
+  font-size: 20px;
+  padding: 20px 20px;
+}
+
+.title-item-nav:hover {
+  cursor: pointer;
+}
+
+
+.title-item:hover {
+  cursor: pointer;
+}
+
+.item {
+  color: white;
+  padding: 20px 20px;
+}
+
+.item:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.item:hover {
+  background-color: $color-3;
+  cursor: pointer;
+}
+
+.bottom-item {
+  text-align: center;
+  padding: 20px 20px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+.bottom-item:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.bottom-item:hover {
+  cursor: pointer;
+}
+
+.divider {
+  background-color: $color-2
+}
+
+.bottom-item:hover {
+  color: $color-1 !important;
+}

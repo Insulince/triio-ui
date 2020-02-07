@@ -1,0 +1,90 @@
+<arby-navbar></arby-navbar>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="register-header">
+        <p class="register-header-title">Sign up to <span class="arby-title">Arby</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="register-body">
+        <form [formGroup]="registerForm" (keydown.enter)="userRegister()">
+          <div class="row body-row">
+            <label class="col-sm-2 col-form-label my-auto body-label">Username</label>
+            <div class="col-sm-10">
+              <input class="form-control body-form" formControlName="username" type="text" placeholder="Username">
+            </div>
+          </div>
+          <div class="row body-row">
+            <label class="col-sm-2 col-form-label my-auto body-label">Email</label>
+            <div class="col-sm-10">
+              <input class="form-control body-form" formControlName="email" type="email" placeholder="you@example.com">
+            </div>
+          </div>
+          <div class="row body-row">
+            <label class="col-sm-2 col-form-label my-auto body-label">Password</label>
+            <div class="col-sm-10">
+              <input class="form-control body-form" formControlName="password" type="password" placeholder="Minimum 8 characters">
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+              <div class="row strength-row">
+                <div class="strength-bar" [ngClass]="{
+                  'no-password': (passwordStrength === 'none'),
+                  'weak-password': (passwordStrength === 'weak'),
+                  'good-password': (passwordStrength === 'good'),
+                  'strong-password': (passwordStrength === 'strong')
+                }"></div>
+                <div class="strength-bar" [ngClass]="{
+                  'no-password': (passwordStrength === 'none'),
+                  'default-bar': (passwordStrength === 'weak'),
+                  'good-password': (passwordStrength === 'good'),
+                  'strong-password': (passwordStrength === 'strong')
+                }"></div>
+                <div class="strength-bar" [ngClass]="{
+                  'no-password': (passwordStrength === 'none'),
+                  'default-bar': (passwordStrength === 'weak' || passwordStrength === 'good'),
+                  'strong-password': (passwordStrength === 'strong')
+                }"></div>
+              </div>
+            </div>
+            <div class="col-sm-2 strength-col">
+              <div *ngIf="passwordStrength === 'weak'">
+                <span class="strength-info weak">Too weak</span>
+              </div>
+              <div *ngIf="passwordStrength === 'good'">
+                <span class="strength-info good">Good</span>
+              </div>
+              <div *ngIf="passwordStrength === 'strong'">
+                <span class="strength-info strong">Excellent</span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="register-footer">
+        <div class="row footer-row">
+          <div class="col-md-12">
+            <form [formGroup]="registerForm" (submit)="userRegister()">
+              <button class="btn register-btn" [disabled]="registerForm.pristine || registerForm.invalid">Create an account</button>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="footer-notification">Already have an account? <a routerLink="/login">Sign in</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--TODO: on successful register, change screen to successful register and then give link back to login (or confirm email?) -->
+
+</div>

@@ -1,0 +1,89 @@
+@import "../../../variables";
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    background-color: $color-4;
+    padding: 30px 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    background-color: $color-4;
+    padding: 60px 40px;
+  }
+  .nav-item {
+    padding: 10px;
+  }
+}
+
+.navbar-brand {
+  width: 155px;
+}
+
+.collapsed {
+  background-color: $color-4;
+  width: 100%;
+}
+
+.collapsed-btn {
+  color: white;
+  border: none;
+  background: none;
+}
+
+.title {
+  font-size: 24px;
+  display: inline;
+  color: white;
+  margin-left: 10px;
+}
+
+.title:hover {
+  cursor: pointer;
+}
+
+.title:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.standard-btn {
+  color: white;
+  border: none;
+  background: none;
+}
+
+.standard-btn:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.standard-btn:hover {
+  color: $color-1;
+  cursor: pointer;
+}
+
+.register-btn {
+  color: white;
+  font-weight: bold;
+  background: none;
+  border-width: 2px;
+  border-color: white;
+}
+
+.register-btn:hover {
+  color: $color-1;
+  border-color: $color-1;
+  cursor: pointer;
+}
+
+.register-btn:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.navbar-dark .navbar-toggler  {
+  border: none !important;
+  outline: none !important;
+}

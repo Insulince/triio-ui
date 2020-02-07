@@ -1,0 +1,22 @@
+@import "../../../../variables";
+
+.header {
+  padding: 40px 0 20px 0;
+  color: $color-2;
+}
+
+.info-row {
+  padding-bottom: 20px;
+}
+
+.header-info {
+  color: grey;
+}
+
+.design-row {
+  justify-content: center;
+}
+
+.design-info {
+  color: $color-2;
+}

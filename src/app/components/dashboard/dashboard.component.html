@@ -1,0 +1,22 @@
+<mat-sidenav-container class="example-container" [hasBackdrop]="true">
+  <mat-sidenav #sidenav [mode]="mode.value" class="dashboard-sidenav-desktop">
+    <div class="title-item-nav" (click)="sidenav.toggle()"><mat-icon class="mat-icon">menu</mat-icon>Arby</div>
+    <mat-divider class="divider"></mat-divider>
+    <div class="item" routerLink="/dashboard/menu" (click)="sidenav.toggle()"><mat-icon class="mat-icon">home</mat-icon>Menu</div>
+    <mat-divider class="divider"></mat-divider>
+    <div class="item" routerLink="/dashboard/arbitrage" (click)="sidenav.toggle()"><mat-icon class="mat-icon">show_chart</mat-icon>Arbitrage</div>
+    <mat-divider class="divider"></mat-divider>
+    <div class="item" routerLink="/dashboard" (click)="sidenav.toggle()"><mat-icon class="mat-icon">short_text</mat-icon>Algorithms</div>
+    <mat-divider class="divider"></mat-divider>
+    <div class="item" routerLink="/dashboard" (click)="sidenav.toggle()" ><mat-icon class="mat-icon">history</mat-icon>History</div>
+    <mat-divider class="divider"></mat-divider>
+    <div class="item" routerLink="/dashboard" (click)="sidenav.toggle()"><mat-icon class="mat-icon">settings</mat-icon>Settings</div>
+    <mat-divider class="divider"></mat-divider>
+    <div class="bottom-item" routerLink="/home" (click)="sidenav.toggle()"><mat-icon class="mat-icon">exit_to_app</mat-icon>Sign out</div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="title-item toggler" (click)="sidenav.toggle()"><mat-icon class="mat-icon">menu</mat-icon>Arby</div>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
