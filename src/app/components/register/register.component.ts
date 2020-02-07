@@ -6,7 +6,7 @@ import {ApiService} from "../../services/api/api.service";
 import {Router} from "@angular/router";
 
 @Component({
-  selector: "arby-register",
+  selector: "triio-register",
   templateUrl: "./register.component.html",
   styleUrls: ["./register.component.scss"]
 })

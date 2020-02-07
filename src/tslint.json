@@ -4,13 +4,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "arby",
+      "triio",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "arby",
+      "triio",
       "kebab-case"
     ]
   }

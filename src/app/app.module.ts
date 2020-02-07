@@ -6,7 +6,6 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {MaterialModule} from "./material/material.module";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-
 /* Components */
 import {AppComponent} from "./app.component";
 import {NavbarComponent} from "./components/navbar/navbar.component";
@@ -18,18 +17,14 @@ import {HomeComponent} from "./components/home/home.component";
 import {DashboardComponent} from "./components/dashboard/dashboard.component";
 import {DesignComponent} from "./components/home/design/design.component";
 import {DemoComponent} from "./components/home/demo/demo.component";
-import {ExchangesComponent} from "./components/home/exchanges/exchanges.component";
 import {PricingComponent} from "./components/home/pricing/pricing.component";
 import {HeaderComponent} from "./components/header/header.component";
-import {ArbitrageComponent } from "./components/dashboard/arbitrage/arbitrage.component";
 import {NotFoundComponent} from "./components/not-found/not-found.component";
-
 /* Services */
 import {ValidationService} from "./services/validation/validation.service";
 import {ApiClient} from "./services/api/api-client.service";
 import {ApiService} from "./services/api/api.service";
-import { MenuComponent } from './components/dashboard/menu/menu.component';
-
+import {MenuComponent} from "./components/dashboard/menu/menu.component";
 
 @NgModule({
   declarations: [
@@ -41,13 +36,11 @@ import { MenuComponent } from './components/dashboard/menu/menu.component';
     HomeComponent,
     NotFoundComponent,
     DashboardComponent,
+    MenuComponent,
     DesignComponent,
     DemoComponent,
-    ExchangesComponent,
     PricingComponent,
-    HeaderComponent,
-    ArbitrageComponent,
-    MenuComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -56,13 +49,9 @@ import { MenuComponent } from './components/dashboard/menu/menu.component';
     BrowserAnimationsModule,
     HttpClientModule,
     MaterialModule,
-    NgbModule.forRoot(),
+    NgbModule.forRoot()
   ],
-  providers: [
-    ValidationService,
-    ApiClient,
-    ApiService
-  ],
+  providers: [ValidationService, ApiClient, ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

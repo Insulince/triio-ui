@@ -1,6 +1,6 @@
 <mat-sidenav-container class="example-container" [hasBackdrop]="true">
   <mat-sidenav #sidenav [mode]="mode.value" class="dashboard-sidenav-desktop">
-    <div class="title-item-nav" (click)="sidenav.toggle()"><mat-icon class="mat-icon">menu</mat-icon>Arby</div>
+    <div class="title-item-nav" (click)="sidenav.toggle()"><mat-icon class="mat-icon">menu</mat-icon>Triio</div>
     <mat-divider class="divider"></mat-divider>
     <div class="item" routerLink="/dashboard/menu" (click)="sidenav.toggle()"><mat-icon class="mat-icon">home</mat-icon>Menu</div>
     <mat-divider class="divider"></mat-divider>
@@ -16,7 +16,7 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <div class="title-item toggler" (click)="sidenav.toggle()"><mat-icon class="mat-icon">menu</mat-icon>Arby</div>
+    <div class="title-item toggler" (click)="sidenav.toggle()"><mat-icon class="mat-icon">menu</mat-icon>Triio</div>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
