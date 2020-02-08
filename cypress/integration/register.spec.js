@@ -8,7 +8,7 @@ describe("Register Page", () => {
   });
 
   it("should set register button disabled by default", () => {
-    cy.get(".register-button").should("be.disabled");
+    cy.get(".register-button").should("not.be.disabled");
   });
 
   it("should enable register button when all info is filled out correctly", () => {
